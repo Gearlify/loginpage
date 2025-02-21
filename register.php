@@ -18,7 +18,7 @@ if(isset($_POST['signUp'])){
         $insertQuery = $conn->prepare("INSERT INTO users (firstName, lastName, email, password) VALUES (?, ?, ?, ?)");
         $insertQuery->bind_param("ssss", $firstName, $lastName, $email, $password);
         if ($insertQuery->execute() === TRUE) {
-                       VALUES ('$firstName','$lastName','$email','$password')";
+                       VALUES ('$firstName','$lastName','$email','$password');
             if($conn->query($insertQuery)==TRUE){
                 header("location: index.php");
             }
