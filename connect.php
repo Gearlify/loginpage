@@ -1,3 +1,4 @@
+<?php
 
 $host="sql309.infinityfree.com";
 $user="if0_38369159";
